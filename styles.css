@@ -1,0 +1,206 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: gray;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition: color 0.3s;
+}
+
+a:hover{
+    color:aqua;
+}
+
+.main-container{
+    background-color: #171717;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #171717;
+    border-bottom: 1px solid gray;
+}
+
+nav .logo-name, nav .tagline{
+    text-align: center;
+    align-self: center;
+    font-size: 3vmin;
+    font-weight:bold;
+    color: whitesmoke;
+}
+
+nav .tagline{
+    margin-top: 5px;
+    font-size: 1.5vmin;
+}
+
+/* Header */
+
+header{
+    padding-bottom: 13%;
+}
+
+header h1{
+    margin-top: 30px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: none;
+    font-size: 5vmin;
+}
+
+header .header-img-container{
+    position: relative;
+    margin: 30px 10% 10px;
+    background-size: cover;
+    height: 35vmax;
+}
+
+header .header-img-container .header-img{
+    width: 100%;
+    height: 100%;
+}
+
+header .reference{
+    position: absolute;
+    font-size: 1.5vmin;
+    top: 1%;
+    right: 2%;
+}
+
+header .definition-container{
+    position: absolute;
+    background-color: whitesmoke;
+    height: auto;
+    width: 80%;
+    top: 80%;
+    left: 10%;
+}
+
+header .definition-container h3, header .definition-container p,
+header .info-reference{
+    text-align: center;
+}
+
+header .definition-container h3{
+    font-size: 2vmax;
+    padding-top: 20px;
+}
+
+header .definition-container p{
+    font-size: 1.2vmax;
+    padding: 3% 10% 0;
+}
+
+header .info-reference{
+    position: relative;
+    color:#171717;
+    font-size: 2vmin;
+    display: block;
+    padding: 3% 0 3%;
+}
+
+header .info-reference:hover{
+    color: #0ecfff;
+}
+
+/* List section */
+
+.list-section{
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.list-section .list-container {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 9% 0;
+}
+
+.list-section .list-container div{
+    width: 20%;
+    height: 10vmin;
+    max-width: 20%;
+    justify-content: center;
+}
+
+.list-section .list-container .list{
+    align-self: center;
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 5vmin;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.list-section .list-container .list-option{
+    font-size: 2vmin;
+}
+
+.list-section .list-container .list:hover{
+    color: #0ecfff;
+}
+
+/* Types */
+.types-section{
+    border: 2px solid red;
+}
+
+.types-section .types-row-1, .types-section .types-row-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 9% 0;
+}
+
+
+.types-1, .types-2, .types-3, .types-4{
+    position: relative;
+    border: 2px solid green;
+    width: 46%;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.types-img{
+    width: 100%;
+}
+
+.types-title{
+    text-align: center;
+    font-size: 3vmin;
+}
+
+.types-1 p, .types-2 p, .types-3 p, .types-4 p{
+    text-align: left;
+    font-size: 1.5vmin;
+    margin: 4% 8% 0;
+}
+
+.types-1 .reference, .types-2 a, .types-3 a, .types-4 a{
+    display: block;
+    text-align: center;
+    font-size: 1.5vmin;
+}
+
+.types-1 .img-reference, .types-2 .img-reference, .types-3 .img-reference, .types-4 .img-reference{
+    position: absolute;
+    top: 1%;
+    right: 4%;
+    font-size: 1.5vmin;
+}
+
+
+
