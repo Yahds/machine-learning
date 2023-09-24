@@ -130,9 +130,8 @@ header .info-reference:hover{
 }
 
 .list-section .list-container div{
-    width: 20%;
+    width: 30%;
     height: 10vmin;
-    max-width: 20%;
     justify-content: center;
 }
 
@@ -154,21 +153,77 @@ header .info-reference:hover{
     color: #0ecfff;
 }
 
+/* Importance */
+.importance-title{
+    margin: 5% 0 5%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3vmin;
+}
+
+.importance-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9% 0;
+}
+
+.importance-section .img-container, .importance-section .txt-container{
+    border: 2px solid green;
+    width: 48%;
+}
+
+.importance-section .img-container .importance-img{
+    width: 100%;
+    height: 100%;
+}
+
+.importance-section .img-container .img-reference{
+    position: absolute;
+    font-size: 1.5vmin;
+    left: 38%;
+}
+
+.importance-section .txt-container{
+    background-color: whitesmoke;
+}
+
+.importance-section .txt-container .txt-title{
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.importance-section .txt-container .txt-desc-1, 
+.importance-section .txt-container .txt-desc-2
+{
+    font-size: 2vmin;
+    margin-top: 5%;
+    margin: 5% 10% 5%;
+}
+
+.importance-section .txt-container .ref,
+.importance-section .txt-container .ref .reference{
+  font-size: 2vmin;
+  text-align: center;
+}
+
 /* Types */
-.types-section{
-    border: 2px solid red;
+
+.types-heading-title{
+    margin-top: 5%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3vmin;
 }
 
 .types-section .types-row-1, .types-section .types-row-2{
     display: flex;
     justify-content: space-between;
-    margin: 2% 9% 0;
+    margin: 5% 9% 0;
 }
 
 
 .types-1, .types-2, .types-3, .types-4{
     position: relative;
-    border: 2px solid green;
     width: 46%;
     background-color: whitesmoke;
     color: black;
@@ -189,7 +244,8 @@ header .info-reference:hover{
     margin: 4% 8% 0;
 }
 
-.types-1 .reference, .types-2 a, .types-3 a, .types-4 a{
+.types-1 .reference, .types-2 .reference, .types-3 .reference, .types-4 .reference{
+    margin: 2% 0 3%;
     display: block;
     text-align: center;
     font-size: 1.5vmin;
@@ -201,6 +257,120 @@ header .info-reference:hover{
     right: 4%;
     font-size: 1.5vmin;
 }
+
+/* Innovations */
+.innovations-title{
+    margin-top: 5%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3vmin;
+}
+
+.innovations-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 9% 0;
+}
+
+.innovations-section .big-container-1, .innovations-section .big-container-2{
+    position: relative;
+    width: 48%;
+}
+
+.innovations-section .big-container-2{
+    width: 50%;
+}
+
+.innovations-section .big-container-1 img, .innovations-section .big-container-2 img{
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.innovations-section .big-container-1 a,
+.row-container-1 .small-container-1 a,
+.row-container-1 .small-container-2 a,
+.row-container-2 .small-container-3 a,
+.row-container-2 .small-container-4 a{
+    position: absolute;
+    font-size: 1.5vmin;
+    width: 100%;
+    left: 1%;
+    bottom:1%;
+}
+
+.innovations-section .big-container-2 .row-container-1,
+.innovations-section .big-container-2 .row-container-2{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.row-container-1 .small-container-1,
+.row-container-1 .small-container-2{
+    width: 48.3%;
+    position: relative;
+}
+
+.row-container-2 .small-container-3,
+.row-container-2 .small-container-4{
+    width: 48%;
+    margin-top: 2%;
+    position: relative;
+}
+
+.big-container-1, .small-container-1, .small-container-2,
+.small-container-3, .small-container-4{
+    position: relative;
+}
+
+.about-1, .about-2{
+    position: absolute;
+    color: whitesmoke;
+    top: 40%;
+    margin: 0 20% 0;
+}
+
+.about-3, .about-4{
+    position: absolute;
+    color: whitesmoke;
+    top: 30%;
+    margin: 0 20% 0;
+}
+
+
+
+.title-1, .title-2, .title-3, .title-4, .title-5{
+    margin-bottom: 5%;
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.title-2, .title-3, .title-4, .title-5{
+    font-size: 2vmin;
+}
+.description{
+    font-size: 1.5vmin;
+}
+
+.description-1{
+    font-size: 2vmin;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px){
+    .innovations-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .innovations-section .big-container-1, .innovations-section .big-container-2{
+        width: 80%;
+    }
+}
+
 
 
 
