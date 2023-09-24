@@ -23,17 +23,56 @@ a:hover{
 }
 
 /* Navigation bar */
-nav {
+nav, footer {
     width: 100%;
-    height: 70px;
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #171717;
     border-bottom: 1px solid gray;
+    align-items: center;
 }
 
-nav .logo-name, nav .tagline{
+nav .logo-img-container, nav .logo-txt-container, nav .slu-img-container,
+footer .logo-img-container, footer .logo-txt-container, footer .slu-img-container{
+    width: 90px;
+    height: 100%;
+    margin: 0 5% 0;
+}
+
+nav .logo-img-container .logo-img,
+nav .slu-img-container .slu-img,
+footer .logo-img-container .logo-img,
+footer .slu-img-container .slu-img{
+    width: 100%;
+    height: 100%;
+}
+
+nav .slu-img-container .slu-img,
+footer .slu-img-container .slu-img{
+    height: 98%;
+    width: 100%;
+}
+
+nav .logo-txt-container,
+footer .logo-txt-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 30%;
+}
+
+nav .logo-txt-container .logo-name,
+nav .logo-txt-container .tagline,
+footer .logo-txt-container .logo-name,
+footer .logo-txt-container .tagline{
+    margin-top: 5%;
+}
+
+nav .logo-name, nav .tagline,
+footer .logo-name, footer .tagline{
     text-align: center;
     align-self: center;
     font-size: 3vmin;
@@ -41,7 +80,8 @@ nav .logo-name, nav .tagline{
     color: whitesmoke;
 }
 
-nav .tagline{
+nav .tagline,
+footer .tagline{
     margin-top: 5px;
     font-size: 1.5vmin;
 }
@@ -158,7 +198,7 @@ header .info-reference:hover{
     margin: 5% 0 5%;
     text-align: center;
     color: whitesmoke;
-    font-size: 3vmin;
+    font-size: 4vmin;
 }
 
 .importance-section{
@@ -168,7 +208,6 @@ header .info-reference:hover{
 }
 
 .importance-section .img-container, .importance-section .txt-container{
-    border: 2px solid green;
     width: 48%;
 }
 
@@ -180,29 +219,30 @@ header .info-reference:hover{
 .importance-section .img-container .img-reference{
     position: absolute;
     font-size: 1.5vmin;
-    left: 38%;
+    left: 35%;
 }
 
 .importance-section .txt-container{
     background-color: whitesmoke;
+    align-self: center;
 }
 
 .importance-section .txt-container .txt-title{
-    font-size: 3vmin;
+    font-size: 2vw;
     text-align: center;
 }
 
 .importance-section .txt-container .txt-desc-1, 
 .importance-section .txt-container .txt-desc-2
 {
-    font-size: 2vmin;
+    font-size: 1vw;
     margin-top: 5%;
     margin: 5% 10% 5%;
 }
 
 .importance-section .txt-container .ref,
 .importance-section .txt-container .ref .reference{
-  font-size: 2vmin;
+  font-size: 1vw;
   text-align: center;
 }
 
@@ -212,7 +252,7 @@ header .info-reference:hover{
     margin-top: 5%;
     text-align: center;
     color: whitesmoke;
-    font-size: 3vmin;
+    font-size: 4vmin;
 }
 
 .types-section .types-row-1, .types-section .types-row-2{
@@ -235,12 +275,12 @@ header .info-reference:hover{
 
 .types-title{
     text-align: center;
-    font-size: 3vmin;
+    font-size: 1.5vw;
 }
 
 .types-1 p, .types-2 p, .types-3 p, .types-4 p{
     text-align: left;
-    font-size: 1.5vmin;
+    font-size: 1vw;
     margin: 4% 8% 0;
 }
 
@@ -263,7 +303,7 @@ header .info-reference:hover{
     margin-top: 5%;
     text-align: center;
     color: whitesmoke;
-    font-size: 3vmin;
+    font-size: 4vmin;
 }
 
 .innovations-section{
@@ -337,30 +377,66 @@ header .info-reference:hover{
     margin: 0 20% 0;
 }
 
-
-
 .title-1, .title-2, .title-3, .title-4, .title-5{
     margin-bottom: 5%;
-    font-size: 3vmin;
+    font-size: 2.5vw;
     text-align: center;
 }
 
 .title-2, .title-3, .title-4, .title-5{
-    font-size: 2vmin;
+    font-size: 1vw;
+    width: 100%;
 }
 .description{
-    font-size: 1.5vmin;
+    font-size: 0.8vw;
 }
 
 .description-1{
-    font-size: 2vmin;
+    font-size: 1vw;
+}
+
+/* Footer */
+
+footer {
+    background-color: #171717;
+    border-top: 1px solid gray;
+    margin-top: 5%;
+    height: 25%;
+}
+
+.creator{
+    margin-top: 3%;
+    font-size: 1vmin;
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
 }
 
 
-
-
-
 @media only screen and (max-width: 800px){
+    /* Importance */
+    .importance-section .txt-container .txt-desc-1, 
+    .importance-section .txt-container .txt-desc-2{
+        font-size: 1.5vmin;
+    }
+
+    .importance-section .txt-container .ref,
+    .importance-section .txt-container .ref .reference{
+    font-size: 1.5vmin;
+    }
+    /* Types */
+
+    .types-title{
+        text-align: center;
+        font-size: 2.5vmin;
+    }
+
+    .types-1 p, .types-2 p, .types-3 p, .types-4 p{
+        font-size: 1.8vmin;
+    }
+
+    /* Innovations */
+
     .innovations-section{
         flex-direction: column;
         align-items: center;
@@ -369,6 +445,37 @@ header .info-reference:hover{
     .innovations-section .big-container-1, .innovations-section .big-container-2{
         width: 80%;
     }
+
+    .about-1, .about-2{
+        position: absolute;
+        color: whitesmoke;
+        top: 30%;
+        margin: 0 15% 0;
+    }
+    
+    .about-3, .about-4{
+        position: absolute;
+        color: whitesmoke;
+        top: 20%;
+        margin: 0 10% 0;
+    }
+
+    .title-1, .title-2, .title-3, .title-4, .title-5{
+        font-size: 3vmin;
+    }
+    
+    .title-2, .title-3, .title-4, .title-5{
+        font-size: 2vmin;
+    }
+
+    .description{
+        font-size: 1.5vmin;
+    }
+    
+    .description-1{
+        font-size: 2vmin;
+    }
+    
 }
 
 
